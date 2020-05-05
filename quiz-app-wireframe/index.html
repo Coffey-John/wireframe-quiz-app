@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>The Gus Malzahn Quiz</title>
+  <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+<!-- Start Quiz Page -->
+  <header class='hud flex-row' id='hud'>
+    <p>SCORE: 0/0</p>
+  </header>
+
+  <div class='flex-container'>
+    <main class='flex-row' id='card'>
+
+      <h1>How well do you know Gus Malzahn?</h1>
+      <button type='submit' class='btn startButton'>Start Quiz</button>
+
+    </main>
+  </div>
+
+<!-- Questions Rendered Page -->
+<header class="hud flex-row" id="hud">
+    <p>SCORE: 0/0</p>
+  </header>
+
+  <div class="flex-container">
+    <main class="flex-row" id="card">
+
+    <div class="gamePage afterStart">
+        <form id="question-form">
+        <h3 class="quizQuestions">What University does Gus Malzahn coach at as of the year 2020?</h3>
+          <div class="row">
+          <input type="radio" value="Auburn University" name="answerChoice" required="">
+          <label class="answer" id="choice0">Auburn University</label>
+          </div>
+
+          <div class="row">
+          <input type="radio" value="Harper College" "="" name="answerChoice" required="">
+          <label class="answer" id="choice1">Harper College</label>
+          </div>
+
+          <div class="row">
+          <input type="radio" value="Seton Hall" name="answerChoice" required="">
+          <label class="answer" id="choice2">Seton Hall</label>
+          </div>
+
+          <div class="row">
+          <input type="radio" value="Valparaiso University" name="answerChoice" required="">
+          <label class="answer" id="choice3">Valparaiso University</label>
+          </div>
+
+          <div class="row">
+          <input type="radio" value="Depaul University" name="answerChoice" required="">
+          <label class="answer" id="choice4">Depaul University</label>
+          </div>
+
+<button type="submit" class="btn checkAnswerButton">Check Answer</button>
+        </form>
+
+      </div>
+    </main>
+  </div>
+
+<!-- Check Answer Page (if Correct) -->
+<header class="hud flex-row" id="hud">
+   <p>
+
+     SCORE: 0/0
+</p>
+ </header>
+
+ <div class="flex-container">
+   <main class="flex-row" id="card">
+
+   <div class="gamePage afterStart">
+       <form id="question-form" style="background-color: rgb(232, 119, 34);">
+    <div class="correct">
+    <p>Correct!</p>
+    <img src="images/Gus_Boom.gif" alt="Happy coach">
+    <button type="submit" class="nextQuestionButton btn">Next Question</button>
+    </div>
+  </form>
+
+     </div>
+   </main>
+ </div>
+
+<!-- Check Answer Page (if Wrong - Part ONE) -->
+<header class="hud flex-row" id="hud">
+   <p>
+
+     SCORE: 0/0
+</p>
+ </header>
+
+ <div class="flex-container">
+   <main class="flex-row" id="card" style="">
+
+   <div class="gamePage afterStart">
+       <form id="question-form" style="background-color: rgb(232, 119, 34);">
+     <div class="wrong">
+     <p>Incorrect</p>
+     <img src="images/Gus_VeryMad.gif" alt="Mad coach">
+     </div>
+     </form>
+
+     </div>
+   </main>
+ </div>
+
+<!-- Check Answer Page (if Wrong - Part TWO) -->
+<header class="hud flex-row" id="hud">
+    <p>
+
+      SCORE: 0/0
+</p>
+  </header>
+
+  <div class="flex-container">
+    <main class="flex-row" id="card" style="">
+
+    <div class="gamePage afterStart">
+        <form id="question-form" style="background-color: rgb(232, 119, 34);">
+        <div class="wrong">
+        <p class="explanations">Since December 2012, Gus Malzahn has served as Auburn's head football coach.</p>
+        <button type="submit" class="nextQuestionButton btn">Next Question</button>
+        </div>
+      </form>
+
+      </div>
+    </main>
+  </div>
+
+
+<!-- View Results / Play Again Page -->
+<header class="hud flex-row" id="hud">
+  <p>
+
+    SCORE: 2/5
+</p>
+</header>
+
+<div class="flex-container">
+  <main class="flex-row" id="card" style="">
+
+   <div class="gamePage end">
+       Thanks for playing!
+       Your final score is at the top of the screen!
+       <button class="btn playAgainButton">Play Again</button>
+       </div>
+
+     </main>
+</div>
+
+
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+  <script src='store.js'></script>
+  <script type="text/javascript" src="index.js"></script>
+
+</body>
+
+</html>
